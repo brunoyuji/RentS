@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">RentS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="empty_view">We\'re sorry.\nNo products were found!</string>
+    <string name="action_settings">Settings</string>
+    <string name="comunicate">Comunicate</string>
+    <string name="feedback">Feedback</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="register">New Account</string>
+    <string name="login">Aluguel Login</string>
+    <string name="txt_warning_email">You need an email adress</string>
+    <string name="txt_warning_email_invalid">Your email adress is not valid</string>
+    <string name="txt_warning_passwords_no_match">Yours passwords are different</string>
+    <string name="txt_warning_password">You need a password</string>
+    <string name="txt_warning_login">Email or Password incorrect</string>
+    <string name="recover_password">Recover password</string>
+    <string name="btn_message_login">Login</string>
+    <string name="message_register">Register</string>
+    <string name="message_loging">Login...</string>
+    <string name="next"><![CDATA[Next]]></string>
+    <string name="back">Back</string>
+    <string name="hint_password_confirmation">Password Confirmation</string>
+    <string name="txt_warning_password_confirmation">Confirm your password</string>
+    <string name="txt_warning_password_wrong_confirmation">Password no match</string>
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_date">dd/mm/aaaa</string>
+    <string name="message_birthday">Birthday</string>
+    <string name="message_cpf">CPF</string>
+    <string name="message_rg">RG</string>
+    <string name="message_raio">from you</string>
+    <string name="message_alocate">Alocate now</string>
+    <string name="message_rent">Rent now</string>
+    <string name="message_add_favorite">Add to Favorite</string>
+    <string name="txt_warning_user_name_empty">You need an user name</string>
+    <string name="txt_warning_birthday_invalid">Birthday is invalid</string>
+    <string name="txt_warning_rg_empty">Please, insert your RG</string>
+    <string name="txt_warning_rg_invalid">This RG is invalid</string>
+    <string name="txt_warning_cpf_empty">please, insert your CPF</string>
+    <string name="txt_warning_cpf_invalid">This CPF number is not valid</string>
+
+
+    <string-array name="categories">
+        <item>Casas</item>
+        <item>Veiculos</item>
+        <item>Ferramentas</item>
+        <item>Sapatos</item>
+    </string-array>
+
+    <string-array name="subcategoriesCars">
+        <item>Temporada</item>
+        <item>Viagem</item>
+        <item>Caminhão</item>
+        <item>Motos</item>
+    </string-array>
+
+    <string-array name="subcategoriesShoes">
+        <item>Mulheres</item>
+        <item>Homens</item>
+    </string-array>
+
+    <string-array name="subcategoriesHouses">
+        <item>Temporada</item>
+        <item>Evento</item>
+        <item>Anual</item>
+    </string-array>
+
+    <string-array name="subcategoriesTools">
+        <item>Construção</item>
+        <item>Eletricas</item>
+        <item>Eletrônicas</item>
+        <item>Mecânicas</item>
+    </string-array>
+
+    <string-array name="tabs">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string name="title_activity_product_list">ProductListActivity</string>
+
+
+</resources>

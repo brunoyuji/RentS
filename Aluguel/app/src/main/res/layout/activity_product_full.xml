@@ -1,0 +1,200 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimaryDark"
+            android:fitsSystemWindows="true">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mvieww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                android:background="@color/gray_background"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="false"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray_background"
+            android:weightSum="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:textSize="20dp"
+                    android:text="Logo bandidon sex strong summer fashion"
+                    android:gravity="center"
+                    android:textColor="#222222"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_value"
+                    android:layout_below="@+id/txt_description"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:text="U$$ 10.10"
+                    android:textColor="@color/red"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/gray_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:id="@+id/ll_rating"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_rating_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:text="4.9"/>
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:isIndicator="true"
+                        android:longClickable="true"
+                        android:rating="4"
+                        android:stepSize="0.1"
+                        android:layout_gravity="center"
+                        style = "?android:attr/ratingBarStyleSmall"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+
+                    android:background="@color/gray_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_distance"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/ll_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_distance"
+                        android:textSize="25dp"
+                        android:text="10 Km"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_raio"
+                        android:textSize="18dp"
+                        android:text="@string/message_raio"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/gray_line"/>
+            <LinearLayout
+                android:id="@+id/ll_adress"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_adress"
+                    android:text="Rua Pamplona, 856. São Paulo-SP"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_alugar"
+                    android:layout_weight="1"
+                    android:text="@string/message_rent"
+                    android:background="@color/button_agree"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_favorite"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/message_add_favorite"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

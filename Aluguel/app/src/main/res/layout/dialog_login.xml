@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/login"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_login"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/txt_warning_email"
+        android:layout_below="@+id/edt_email"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWarning"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_below="@+id/txt_warning_email"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/txt_warning_password"
+        android:layout_below="@+id/edt_password"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWarning"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_new_user"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:onClick="onClick"
+        android:textColor="#6669d2"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/register"/>
+
+    <TextView
+        android:id="@+id/txt_recover_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/recover_password"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_alignStart="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="#ffffff"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="18dp"
+        android:clickable="true"
+        android:text="@string/btn_message_login"
+        android:layout_below="@+id/txt_warning_password"
+        android:layout_toEndOf="@+id/txt_new_user" />
+
+</RelativeLayout>

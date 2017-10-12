@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="45dp"
+    android:layout_height="45dp">
+
+    <RelativeLayout
+        android:id="@+id/counterPanel"
+
+        android:layout_width="32dp"
+        android:layout_height="32dp" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/counterValuePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/counterPanel">
+
+        <ImageView
+            android:id="@+id/counterBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unread_background"
+            android:layout_alignBottom="@+id/count"
+            android:layout_alignEnd="@+id/count" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="1"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

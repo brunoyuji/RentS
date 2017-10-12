@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7549</color>
+    <color name="colorPrimaryDark">#FF783B</color>
+    <color name="colorAccent">#9da0ff</color>
+    <color name="colorWarning">#fd1823</color>
+    <color name="button_agree">#46d660</color>
+    <color name="black">#000000</color>
+    <color name="red">#fd3232</color>
+    <color name="gray_background">#efefef</color>
+    <color name="gray_line">#c0c0c0</color>
+    <color name="app_red">#800000</color>
+    <color name="app_green">#336622</color>
+    <color name="text_color">#222222</color>
+</resources>
