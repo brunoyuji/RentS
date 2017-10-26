@@ -33,8 +33,13 @@ create table address ( id_address integer primary key AUTO_INCREMENT,
 			id_user int,
 			street_name varchar(255) not null,
             complement varchar(255),
+<<<<<<< HEAD
+            local_number varchar(255) not null,
+            zip_code varchar(255) not null,
+=======
             local_number int not null,
             zip_code int not null,
+>>>>>>> a098f1b1ad42062851d5c9e816151c7b34426089
 			city varchar(255) not null,
             state_province_district varchar(255) not null,
             country varchar(255) not null
@@ -62,6 +67,14 @@ create table products_categories (
 );
 
 
+<<<<<<< HEAD
+create table favorites (
+			id_product int,
+			id_renter int
+);
+
+=======
+>>>>>>> a098f1b1ad42062851d5c9e816151c7b34426089
 create table categories (
 			id_category integer primary key AUTO_INCREMENT,
 			category_name varchar(255) not null,
@@ -137,12 +150,27 @@ ALTER TABLE products ADD FOREIGN KEY(id_user) REFERENCES landlord(id_user);
 
 
 ALTER TABLE ad_complaint ADD FOREIGN KEY(id_product) REFERENCES products(id_product);
+<<<<<<< HEAD
+ALTER TABLE ad_complaint ADD FOREIGN KEY(id_renter) REFERENCES renter(id_user);
+ALTER TABLE ad_complaint ADD FOREIGN KEY(id_supervisor) REFERENCES supervisor(id_user);
+=======
 ALTER TABLE ad_complaint ADD FOREIGN KEY(id_renter) REFERENCES user_profile(id_user);
 ALTER TABLE ad_complaint ADD FOREIGN KEY(id_supervisor) REFERENCES user_profile(id_user);
+>>>>>>> a098f1b1ad42062851d5c9e816151c7b34426089
 
 ALTER TABLE request ADD FOREIGN KEY(id_product) REFERENCES products(id_product);
 ALTER TABLE request ADD FOREIGN KEY(id_renter) REFERENCES renter(id_user);
 
+<<<<<<< HEAD
+ALTER TABLE products_categories ADD FOREIGN KEY(id_product) REFERENCES products(id_product);
+ALTER TABLE products_categories ADD FOREIGN KEY(id_category) REFERENCES categories(id_category);
+
+ALTER TABLE favorites ADD FOREIGN KEY(id_product) REFERENCES products(id_product);
+ALTER TABLE favorites ADD FOREIGN KEY(id_renter) REFERENCES renter(id_user);
+
+
+=======
+>>>>>>> a098f1b1ad42062851d5c9e816151c7b34426089
 ALTER TABLE rental ADD FOREIGN KEY(id_request) REFERENCES request(id_request);
 
 ALTER TABLE payment ADD FOREIGN KEY(id_request) REFERENCES rental(id_request);
@@ -154,3 +182,7 @@ ALTER TABLE landlord_rating ADD FOREIGN KEY(id_request) REFERENCES rental(id_req
 ALTER TABLE renter_rating ADD FOREIGN KEY(id_request) REFERENCES rental(id_request);
 ALTER TABLE product_rating ADD FOREIGN KEY(id_request) REFERENCES rental(id_request);
 
+<<<<<<< HEAD
+new times planilha
+=======
+>>>>>>> a098f1b1ad42062851d5c9e816151c7b34426089
